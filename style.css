@@ -1,0 +1,11 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.cabecalho {
+    background-color: #49acaf;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+}
