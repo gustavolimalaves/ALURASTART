@@ -1,11 +1,9 @@
-body {
-    font-family: 'Poppins', sans-serif;
+@import url("style/header.css");
+
+:root {
+    --cor-de-fundo: #ebecee;
 }
-.cabecalho {
-    background-color: #49acaf;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
+
+body {
+    background-color: var(--cor-de-fundo);
 }
