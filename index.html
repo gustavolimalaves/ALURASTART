@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" >
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -83,25 +82,33 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
-        <div class="carrossel__container">
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
-                <div class="swiper-wrapper">   
-                    <div class="swiper-slide"><img src="img/cardapio.avif"
-                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                    <div class="swiper-slide"><img src="img/gostoso.jpg"
-                            alt="lanche gostoso que da agua na boca"></div>
-                    <div class="swiper-slide"><img src="img/Javascript.svg"
-                            alt=""></div>
-                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
-                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+        <!-- Slider main container -->
+        <div class="swiper-pagination"></div>
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/gostoso.jpg" alt="hamburguer 1"></div>
+      <div class="swiper-slide"><img src="img/hamburguer.jpg" alt="hamburger 2"></div>
+      <div class="swiper-slide"><img src="img/combo.webp" alt="hamburger 3"></div>
+      <div class="swiper-slide"><img src="img/cheeseburger-duplo-burger-king-rodizio.webp" alt="hamburger 4"></div>
+      <div class="swiper-slide"><img src="img/burger.avif" alt="hamburger 5"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-</html>
+          });</script>
+ </html>
